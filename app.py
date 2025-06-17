@@ -3,7 +3,6 @@ from PIL import Image
 image = Image.open("lenna.jpg")
 rgb_image = image.convert("RGB")
 red_channel, green_channel, blue_channel = rgb_image.split()
-image = Image.merge("RGB", (red_channel, green_channel, blue_channel))
 
 offset = 50
 
